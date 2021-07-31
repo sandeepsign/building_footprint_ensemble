@@ -1,0 +1,13 @@
+name: project
+channels:
+  - conda-forge
+  - defaults
+  - pytorch
+dependencies:
+  - numpy
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cudatoolkit=11.1
+  - pillow
+  - tensorboard

@@ -1,0 +1,26 @@
+
+#Install Solaris (this will install all the needed libs as well: e.g. pytorch, shapely, gdal, rtree etc.)
+git clone https://github.com/cosmiq/solaris.git
+cd solaris
+git checkout master
+conda env create -f environment-gpu.yml
+
+#Verify if environment is active with GPU
+conda activate solaris
+python
+  (solaris) sandeep@dl-train-t4:~/solaris$ python
+  Python 3.7.8 | packaged by conda-forge | (default, Nov 17 2020, 23:45:15) 
+  [GCC 7.5.0] on linux
+  Type "help", "copyright", "credits" or "license" for more information.
+  >>> import torch
+  >>> torch.cuda.is_available()
+  True
+  >>> exit()
+
+
+
+
+# URL
+http://104.197.65.82:8888/tree
+#password: cs7643
+

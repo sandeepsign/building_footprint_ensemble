@@ -1,0 +1,42 @@
+VM Instance:
+===========
+
+Operation type [insert] failed with message "The zone 'projects/cs7643-317405/zones/us-central1-a' does not have enough resources available to fulfill the request. Try a different zone, or try again later."
+
+gcloud config configurations activate default
+gcloud config configurations activate sandeepsign
+
+        
+
+repos:
+git clone https://github.com/cswksu/aerialDetection.git
+
+cwillis diffs
+
+
+main.py
+-------
+
++data_path = '/home/sandeep/GoogleDrive/beans-home/mount_shared_partition/image_data/data_building_footprint/original_data/AerialImageDataset'
+
+#in accuracy, replace prints as:
++        print(f'Epoch {epoch} ;  Batch ' + str(idx) + ':-  accuracy: ' + str(batch_acc) + ';  loss: ' + str(loss))
++        # print('Batch ' + str(idx) + ' loss: ' + str(loss))
+
+
+
+
+
+MultiChComboLoss :  output.shape :  torch.Size([16, 3, 256, 256]) 	 target.shape :  torch.Size([16, 3, 256, 256])
+#ch1
+FocalLoss :  inputs.shape :  torch.Size([16, 1, 256, 256]) 	 targets.shape :  torch.Size([16, 1, 256, 256])
+DiceLoss :  input.shape :  torch.Size([16, 1, 256, 256]) 	 torch.Size([16, 1, 256, 256])
+dice_loss :  input.shape :  torch.Size([16, 1, 256, 256]) 	 torch.Size([16, 1, 256, 256])
+#ch2
+FocalLoss :  inputs.shape :  torch.Size([16, 1, 256, 256]) 	 targets.shape :  torch.Size([16, 1, 256, 256])
+DiceLoss :  input.shape :  torch.Size([16, 1, 256, 256]) 	 torch.Size([16, 1, 256, 256])
+dice_loss :  input.shape :  torch.Size([16, 1, 256, 256]) 	 torch.Size([16, 1, 256, 256])
+#ch3
+FocalLoss :  inputs.shape :  torch.Size([16, 1, 256, 256]) 	 targets.shape :  torch.Size([16, 1, 256, 256])
+DiceLoss :  input.shape :  torch.Size([16, 1, 256, 256]) 	 torch.Size([16, 1, 256, 256])
+dice_loss :  input.shape :  torch.Size([16, 1, 256, 256]) 	 torch.Size([16, 1, 256, 256])
