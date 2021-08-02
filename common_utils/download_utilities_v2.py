@@ -63,8 +63,8 @@ import traceback2 as traceback
 from google.cloud import storage
 from tempfile import TemporaryFile,NamedTemporaryFile
 
-GCP_KEY = 'AIzaSyDzgoaU7fIB4yux8TBjDUJxGa3hEAiQC1g'
-SERVICE_ACCT_JSON = '/home/sandeep/Desktop/beans-home/environments/beans/beans-cloud-867403b137c5.json'
+GCP_KEY = '<Place-GCPKEY>'
+SERVICE_ACCT_JSON = 'service-accont.json'
 IMAGE_MAX_SIZE_TILES = 50000
 
 PATH_IMGS = '/home/sandeep/GoogleDrive/beans-home/mount_shared_partition/images_home'
